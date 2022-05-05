@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animal Photography - Home</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="description" content="Website dedicated to Animal Photography, a local nature and animal photographer, to exhibit photos and services.">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Animal Photography</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="template.html">HOME</a></li>
+                <li><a href="page1.html">PHOTOS</a></li>
+                <li><a href="page2.html">ABOUT</a></li>
+                <li><a href="page3.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--hero image and title-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="hedgehoghero">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--text-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="text">
+                            <h2>Welcome!</h2>
+                            <p>The website features photographs of animals from Pixabay.com. The key to animal photography is patience. It can take a long time to get the right lighting and the best view of the animal. When photographing animals, you do not have a lot of control...you need to wait for them.</p>
+                            <p>Please enjoy our gallery...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--gallery and preview-->
+            <div class="gallery">
+                <div class="preview">
+                    <img id="preview" src="images/frog.jpg" style="display:block;margin:0 auto;" alt="Green frog leaping from leag to leaf"  height="600" width="800"/>
+                </div>
+                
+            
+                <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+                    <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/bison.jpg" alt="Lone bison standing in grassy field" />
+                    <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/buck.jpg" alt="Proud buck with large antlers standing near a forest"  />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/eagle.jpg" alt="Profile of a bald eagle" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/fox.jpg" alt="Red fox standing in a wintry field, looking directly at camera" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/frog.jpg" alt="Green frog leaping from leag to leaf"  />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/hedgehog.jpg" alt="Round hedgehog looking at camera" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/lizard.jpg" alt="Profile of an iridescent lizard" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/otter.jpg" alt="Brown otter looking up to camera" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/rabbit.jpg" alt="Brown rabbit with perky ears in a field" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/sheep.jpg" alt="Sheem with large round horns" />
+                    <img onclick="document.getElementById('preview').src = document.getElementById('img11').src;" id="img11" src="images/spider.jpg" alt="Close up view of the face of a hairy brown spider" />
+                </div>
+            </div>
+            
+        </main>
+
+        <!--footer and social media info-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6" style="text-align: center">
+                        <h3>Animal Photography</h3>
+                        <p>&copy; 2022 Julia Miller. All rights reserved.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div><a href="mailto:email@animalphotography.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email us: email@animalphotography.com
+                        </a>
+                        </div>
+                        <div><a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i> Follow us: @animalphotography
+                        </a>
+                        <div>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i> Call us: 555.555.4155
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+<!--TO DO:
+    1. Figure out footer: font, spacing, links, etc.
+    2. Responsive?
+-->

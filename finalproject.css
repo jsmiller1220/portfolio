@@ -1,0 +1,210 @@
+/*Google font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Serif&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.logo{
+    margin: 0 auto;
+    display:block;
+    margin-bottom: 1em;
+    }    
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Roboto Serif', sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    color: #570F4C;
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+nav {
+    background-color: #570F4C;
+    border-top: 5px solid #262C26;
+    border-bottom: 5px solid #262C26;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 1em;
+}
+
+/*IF you want nav to be horizontal, as opposed to vertical*/
+nav li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/*link states for nav - adjust as needed*/
+nav a:link {color: #FFFFFF;}
+nav a:visited{color: #FFFFFF;}
+nav a:hover {color: #3E92CC; text-decoration: none;}
+nav a:active{color: #A3A6A3;}
+
+footer {
+    background: #262C26;
+    color: #a3a6a3 ;
+    text-align: center;
+    border-top: 2px solid #000000;
+    padding: 10px;
+}
+
+footer a {
+    font-size: 1.25em;
+}
+
+footer a:link {color: #a3a6a3 ;}
+footer a:visited {color: #a3a6a3 ;}
+footer a:hover {color: #C9F2F7;}
+footer a:active{color: #FFFFFF;}
+
+/*CSS for About Me page*/
+
+.aboutme ul {
+    list-style-type: square;
+    overflow: hidden;
+}
+
+#profile {
+    height: auto;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.example {
+    text-align: center;
+}
+
+.example a {
+    color: #570F4C;
+}
+
+.example img {
+    border-radius: 10px;
+}
+
+/*CSS for table*/
+
+table  {
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: auto;
+}
+
+caption {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 4px;
+}
+
+th {
+    font-weight: 700;
+    background-color: #570F4C;
+    color: #FFFFFF;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 4px;
+}
+
+tr:nth-of-type(odd) {
+    background-color:#DDDDDD
+}
+
+td:nth-of-type(1) {
+    font-weight: bold;
+}
+
+/*CSS for form*/
+
+label {
+    padding-top: 1em;
+}
+
+#asterisk {
+    font-style: italic;
+    font-size: .8em;
+}
+
+/* CSS adjustments for tablets */
+@media only screen and (max-width: 1024px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 2em;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        border:1px solid #000000;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: block;
+        padding: 0;
+        text-align: center;
+        border: 1px solid #000000;
+    }
+}
+
+/* CSS adjustments for smartphones */
+@media only screen and (max-width: 768px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        border:1px solid #000000;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: block;
+        padding: 0;
+        border: 1px solid #000000;
+    }
+}

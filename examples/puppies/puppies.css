@@ -1,0 +1,222 @@
+/*Google font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #DDCA7D;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Graduate', serif;
+    text-align: center;
+    font-size: 4em;
+    padding: .5em;
+}
+
+h1 i.fa {
+    font-size: 1em;
+    color:#FF5C7A;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+h2 {
+    color: #333333;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #333333;
+    border-top: 2px solid #FF5C7A;
+    border-bottom: 2px solid #FF5C7A;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/*IF you want nav to be horizontal, as opposed to vertical*/
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF5C7A;
+    padding: 2em;
+    font-weight: 600;
+}
+
+nav i.fa {
+    color: #333333;
+    font-size: 1em;
+
+}
+
+/*link states for nav - adjust as needed*/
+nav a:link {color: #FF5C7A;}
+nav a:visited{color: #FF5C7A}
+nav a:hover {
+    text-decoration: none;
+}
+nav a:active {
+    color: #808D8E;
+    text-decoration: none;
+}
+nav a:hover i.fa {
+    color:#FF5C7A;
+}
+
+nav a:active i.fa {
+    color:#808D8E;
+}
+
+/*hero image*/
+#puppyhero {
+    background-image: url(images/header.jpg);
+    height: 475px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+
+blockquote {
+    margin: 1em 0em;
+    color: #000000;
+}
+
+blockquote a {
+    color: #000000;
+}
+
+/*puppy images*/
+.puppy {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+footer {
+    color: #808D8E;
+    background-color: #333333;
+    text-align: center;
+    border-top: 2px solid #FF5C7A;
+    padding: 10px;
+}
+
+footer a:link {color: #808D8E;}
+footer a:visited {color: #808D8E;}
+footer a:hover {
+    color: #FF5C7A;
+    text-decoration: none;
+}
+
+footer a:active{
+    color: #FF5C7A;
+    text-decoration: none;
+    text-shadow: 2px 2px #000000;
+}
+
+footer a:hover i.fa {
+    color: #FF5C7A;
+}
+
+footer a:active i.fa {
+    color: #FF5C7A;
+}
+
+/*CSS for Font Awesome*/
+i.fa {
+    color:#808D8E;
+    font-size: 3em;
+}
+
+/* CSS adjustments for tablets */
+@media only screen and (max-width: 1024px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        background-color: #000000;
+        color: #DDCA7D;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        border-bottom: 0;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        padding: 0;
+        border: 1px #FF5C7A solid;
+        text-align: center;
+    }
+}
+
+/* CSS adjustments for smartphones */
+@media only screen and (max-width: 768px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3 {
+        background-color: #000000;
+        color: #DDCA7D;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        border-bottom: 0;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        padding: 0;
+        border: 1px #FF5C7A solid;
+    }
+}

@@ -1,0 +1,179 @@
+/*Google font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #DBC4A9;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Bebas Neue', serif;
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 4em;
+    padding: .5em;
+}
+
+h2 {
+    color: #082D0F;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #1B9D51;
+    border-top: 2px solid #2A2B2A;
+    border-bottom: 2px solid #2A2B2A;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*IF you want nav to be horizontal, as opposed to vertical*/
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A2B2A;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/*link states for nav - adjust as needed*/
+nav a:link {color: #2A2B2A;}
+nav a:visited{color: #2A2B2A}
+nav a:hover {color: #69DDFF}
+nav a:active{color: #FFFFFF;}
+
+/*hero image*/
+#hedgehoghero {
+    background-image: url(images/hedgehoghero.png);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+    border: 2px #082D0F solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #2A2B2A;
+}
+
+#text {
+    margin: 1em 0 1em 0;
+}
+
+/*gallery and preview*/
+.gallery .preview{
+    width: 100%;
+    height: auto;
+    margin: 1em;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 2px #082D0F solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #2A2B2A;
+}
+
+
+footer {
+    color: #1B9D51;
+    background-color: #2a2a2a;
+    text-align: left;
+    border-top: 2px solid #082D0F;
+    padding: 10px;
+}
+
+footer a:link {color: #1B9D51;}
+footer a:visited {color: #1B9D51;}
+footer a:hover {color: #69DDFF;}
+footer a:active{color: #FFFFFF;}
+
+/*CSS for Font Awesome*/
+footer i.fa {
+    color:#1B9D51;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #000000;
+}
+
+/* CSS adjustments for tablets */
+@media only screen and (max-width: 1024px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 2em;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        border:1px solid #000000;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* CSS adjustments for smartphones */
+@media only screen and (max-width: 768px) {
+    /*CSS goes here - NESTED*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        border:1px solid #000000;
+        font-size:1.5em;
+        max-width: 75%;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        padding: 0;
+    }
+}
