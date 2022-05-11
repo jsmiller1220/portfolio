@@ -6,21 +6,26 @@ body {
     margin: 0;
 }
 
-.logo{
-    margin: 0 auto;
-    display:block;
-    margin-bottom: 1em;
-    }    
-
 main {
     max-width: 1000px;
     margin: 20px auto;
 }
 
+header {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+}
+
 h1 {
-    font-family: 'Roboto Serif', sans-serif;
-    text-align: center;
     font-size: 3em;
+    margin: 0;
+    padding: .1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 h2 {
@@ -201,6 +206,7 @@ label {
 /* CSS adjustments for smartphones */
 @media only screen and (max-width: 768px) {
     /*CSS goes here - NESTED*/
+    
     h1 {
         font-size: 1.5em;
     }
