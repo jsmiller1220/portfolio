@@ -71,6 +71,14 @@ footer {
     padding: 10px;
 }
 
+.textcenter {
+    text-align: center;
+}
+
+.textleft {
+    text-align: left;
+}
+
 footer a {
     font-size: 1.25em;
 }
@@ -136,6 +144,17 @@ tr:nth-of-type(odd) {
 
 td:nth-of-type(1) {
     font-weight: bold;
+}
+
+/*CSS for multimedia*/
+
+.map {
+    border: 0;
+}
+
+.soundcloud {
+    font-size: 10px;
+    color: #cccccc;
 }
 
 /*CSS for form*/
